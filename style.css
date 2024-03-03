@@ -1,0 +1,95 @@
+
+body,h1,h2 {
+    margin: 0;
+    font-family:  "Inter", sans-serif;;
+    padding: 0;
+}
+/**
+Меню
+**/
+.wrap {
+    padding:10px 10px;
+}
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    justify-content: space-between;
+    gap: 5px;
+}
+.menu_item{
+    border-radius: 2px;
+    padding: 5px 15px;
+    text-align: center;
+    background: #5A7894;
+    color: #FFFFFF;
+    flex: 0 0 auto;
+}
+.menu_item.active{
+    background:#2487E3;
+}
+/**
+  Товары
+**/
+.container {
+    margin:5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+.dish {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.dish_name {
+    color: #2487E3;
+    min-height: 45px;
+    font-size: 18px;
+}
+.dish_photo img {
+    width: 100%;
+}
+.dish_content_container {
+    padding: 10px;
+}
+.dish_name {
+    text-align: center;
+}
+.dish_info {
+    display: grid;
+    margin: 12px 0;
+    grid-template-columns: repeat(2,1fr);
+}
+.dish_info .price {
+    text-align: left;
+    font-weight: bold;
+}
+.dish_info .weight {
+    text-align: right;
+}
+.dish_action {
+    display: flex;
+    justify-content: center;
+}
+
+
+/** Кнопки **/
+.btn {
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+    background: #ECECEC;
+}
+.btn_to_card img {
+    font-weight: bold;
+    padding: 5px;
+    background: #D9D9D9;
+}
+.btn_to_card .text {
+    width: 100px;
+}
