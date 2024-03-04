@@ -80,14 +80,30 @@ body,h1,h2 {
     font-size: 16px;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
     background: #ECECEC;
+}
+.btn_complex {
+    display: flex; 
+    align-items: center;
+    background: #ECECEC;
+    border-radius: 5px;
+    font-size: 16px;
 }
 .btn_to_card img {
     font-weight: bold;
     padding: 5px;
     background: #D9D9D9;
+}
+.btn_item_count img {
+    font-weight: bold;
+    padding: 5px;
+    background: #D9D9D9;
+}
+.text_count {
+    padding: 5px 0;
+    width: 50px;
+    text-align: center;
 }
 .btn_to_card .text {
     width: 100px;
