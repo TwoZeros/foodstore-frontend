@@ -108,3 +108,17 @@ body,h1,h2 {
 .btn_to_card .text {
     width: 100px;
 }
+.go_to_card {
+    visibility: hidden;
+    justify-content: center;
+    text-align: center;
+    color: #ECECEC;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    padding: 20px;
+    background-color: #0776dea0;
+}
+.go_to_card.active {
+    visibility: visible;
+}
