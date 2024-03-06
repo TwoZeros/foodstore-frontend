@@ -37,6 +37,10 @@ body,h1,h2 {
     grid-template-columns: repeat(2,1fr);
     gap:10px;
 }
+
+.container_card {
+    margin:5px;
+}
 .dish {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -81,6 +85,7 @@ body,h1,h2 {
     cursor: pointer;
     display: flex;
     align-items: center;    
+    justify-content: center;
     background: #ECECEC;
 }
 .btn_complex {
@@ -121,4 +126,65 @@ body,h1,h2 {
 }
 .go_to_card.active {
     visibility: visible;
+}
+
+
+/**
+
+**/
+.container_card h1 {
+    font-size: 18px;
+    padding: 20px 0;
+}
+.card_item {
+    display: grid;
+    gap:10px;
+    margin:10px 0;
+    grid-template-columns: 90px auto 125px;
+}
+.card_item h2{
+    font-size: 14px;
+    color: #2487E3;
+}
+.card_item_img img {
+    width: 100%;
+    border-radius: 5px;
+}
+.card_item_descr{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_item_price span{
+    font-weight: bold;
+}
+.card_item_price {
+    font-size: 14px;
+}
+.card_item_action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_action {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    gap: 10px;
+}
+.confirm-order {
+    color: whitesmoke;
+    background-color: #0776dea0;
+    text-align: center;
+    padding: 20px;
+}
+.cancel {
+    color: whitesmoke;
+    background-color: #de0b07a0;
+    text-align: center;
+    padding: 20px 0;
 }
